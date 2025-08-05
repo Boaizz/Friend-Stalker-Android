@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "672727699215",
+    "project_id": "location-tracker-80569",
+    "storage_bucket": "location-tracker-80569.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672727699215:android:0a857235691e5aab21b87a",
+        "android_client_info": {
+          "package_name": "com.tonyn.friend_stalker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeLlOe10cOA5WsH_dlBXHHheEXJNIO7uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
