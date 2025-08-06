@@ -3,11 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/mapFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.tonyn.friend_stalker.presentation.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+        android:id="@+id/action_login_to_map"
+        app:destination="@id/mapFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.tonyn.friend_stalker.presentation.map.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
 </navigation>

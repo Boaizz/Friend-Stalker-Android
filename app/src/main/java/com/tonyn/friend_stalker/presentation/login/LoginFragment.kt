@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.tonyn.friend_stalker.R
 import com.tonyn.friend_stalker.data.remote.AuthApi
@@ -56,7 +57,7 @@ class LoginFragment : Fragment() {
         viewModel.state.observe(viewLifecycleOwner) { state ->
             when (state) {
                 is LoginState.Loading -> statusText.text = "Logging in..."
-                is LoginState.Success -> statusText.text = "Welcome ${state.user.username}"
+                is LoginState.Success -> findNavController().navigate(R.id.action_login_to_map)
                 is LoginState.Error -> statusText.text = state.message
                 is LoginState.Idle -> statusText.text = ""
             }
